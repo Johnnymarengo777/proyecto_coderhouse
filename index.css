@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grilla{
+height: 100vh;
+display: grid;
+grid-template-columns: 15vw 1fr 20vw;
+grid-template-rows: 100px 1fr 1fr 75px; 
+grid-template-areas: 
+"header header header"
+"aside navegador navegador"
+"aside productos productos"
+"aside productos productos"
+"aside servicios servicios"
+"footer footer footer";
+}
+.header{
+background-color: red;
+grid-area: header;
+height: 100px;
+padding-top: 20px;
+text-decoration: none;
+}
+.navbar ul li{
+color: white;
+list-style: none;
+display: inline-flex;
+margin: 10px 10px;
+}
+a{
+text-decoration: none;
+color: aliceblue;
+justify-content: center;
+}
+.buscador{
+margin-left: 470px;
+height: 30px;
+width: 300px;
+margin-top:-30px;
+}
+.productos{
+background-color: beige;
+grid-area: productos;
+display: inline-flex;
+justify-content: center;
+}
+.servicios{
+background-color: bisque;
+grid-area: servicios;
+}
+.navegador{
+background-color:cornsilk;
+grid-area: navegador;
+display: inline-flex;
+justify-content: center;
+padding: 10px;
+}
+.aside{
+color: black;
+grid-area: aside;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.aside__items{
+margin: 20px;
+list-style-type: none;
+}
+.footer{
+background-color: navajowhite;  
+grid-area: footer;
+display: inline-block;
+/*display: flex;
+justify-content: flex-end;*/
+
+}
+#registro{
+display: flex;
+justify-content: center;
+}
+.aside__categorias{
+    list-style-type: none;
+    color: black;
+    margin: 20px;
+}
+.footer__categorias{
+    display: flex;
+    justify-content: flex-end;
+}
