@@ -90,3 +90,4 @@ justify-content: center;
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width: 300px)
