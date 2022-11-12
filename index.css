@@ -7,6 +7,9 @@ body{
     font-size: 1em;
     height: 100vh;
 }
+html{
+    font-size: 62,5%;
+}
 
 #grilla{
 height: 100vh;
@@ -24,7 +27,7 @@ grid-template-areas:
 background-image: linear-gradient(45deg, red , rgb(181, 60, 60)) ;
 grid-area: header;
 height: 100px;
-padding-top: 20px;
+padding-top: 10px;
 text-decoration: none;
 }
 header div a h1{
@@ -34,11 +37,12 @@ color: black;
 color: black;
 }
 section nav ul li{
-transform: translate(35vw);    
+transform: translate(35vw);
+text-decoration: none;    
 color: white;
 list-style: none;
 display: inline-flex;
-margin: 10px 10px;
+
 }
 a{
 text-decoration: none;
@@ -59,7 +63,7 @@ grid-area: productos;
 display: inline-flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 10px;
+gap: 15px;
 }
 .navegador{
 background-color:white;
@@ -86,36 +90,44 @@ color: black;
 grid-area: aside;
 }
 .footer{
-background-color: navajowhite;  
+background-color: darkgrey;  
+display: flex;
+justify-content: space-between;
 grid-area: footer;
-display: inline-block;
+padding: 10px;
 }
-.aside__categorias{
+
+.aside__items{
 list-style-type: none;
 color: black;
 margin: 20px;
 }
-.footer{
-display: flex;
-justify-content: space-between;
-padding: 10px;
-background-color: darkgray;
-}
+
 .registro{
 width: fit-content;
 margin: 0 auto;
 padding: 150px;
-
 }
+/*.body_registro{
+    background-image: image();
+}*/
 .footer__registro{
-display: flex;
-justify-content: space-between;
-padding: 10px;
+/*display: flex;
+justify-content: space-between;*/
 background-color: darkgray;
-position: absolute;
+padding: 1em 0;
+text-align: center;
+position: relative;
 bottom: 0%;
 width: 100%;
 }
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 @keyframes appear{
     from{
         transform: translate(-500px);
@@ -123,7 +135,17 @@ width: 100%;
     to{
         transform: translate(0);
     }
+}
+
+@media screen and (max-width: 952px){
+   html{
+        padding-left: 100px;
+    }
+
+} 
+@media screen and (max-width:858px){
     
 }
 
 
+    
